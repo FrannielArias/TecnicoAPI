@@ -1,0 +1,6 @@
+@TecnicoAPI_HostAddress = http://localhost:5028
+
+GET {{TecnicoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
