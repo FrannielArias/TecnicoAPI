@@ -13,7 +13,11 @@ namespace Tecnicos.Data.DI
     {
         public static IServiceCollection RegisterDbContextFactory(this IServiceCollection services)
         {
-            services.AddDbContextFactory<TecnicosContext>(o => o.UseSqlServer("ConStr"));
+            services.AddDbContextFactory<TecnicosContext>(options =>
+                options.UseSqlServer("Name=SqlConStr",
+                    sqlOptions => sqlOptions.MigrationsAssembly("TecnicoAPI")
+                )
+            );
             return services;
         }
     }
