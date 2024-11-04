@@ -52,7 +52,7 @@ namespace TecnicoAPI.Controllers
         {
             await clientesService.Guardar(clientesDto);
 
-            return CreatedAtAction("GetPrioridades", new { id = clientesDto.ClienteId }, clientesDto);
+            return CreatedAtAction("GetClientes", new { id = clientesDto.ClienteId }, clientesDto);
         }
 
         // DELETE: api/Clientes/5
