@@ -5,7 +5,7 @@
 namespace TecnicoAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class TecnicosApi : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
